@@ -1,6 +1,24 @@
 <template>
+  <div class="text-center record gap-1 flex justify-center font-bold text-white">      
+    <div class="wins bg-green-600 px-6 rounded">
+      <p class="text-3xl">{{ fighter.wins }} </p>
+    </div>
+    
+    <div class="losses bg-red-600 px-6 rounded">
+      <p class="text-3xl">{{ fighter.losses }}</p>
+    </div>
+    
+    <div class="draws bg-blue-400 px-6 rounded">
+      <p class="text-3xl">{{ fighter.draws }}</p>
+    </div>  
+  </div>
+
+  <div>
+    <img class="rounded-xl" :src="fighter.image" alt="fighter image">
+  </div>
+
   <div class="max-w-5xl">
-    <div class="max-w-md p-6 bg-slate-600 m-12 rounded-xl">
+    <div class="max-w-md p-2 bg-slate-600 m-12 rounded-xl">
       <img :src="fighter.image" alt="fighter image">
     </div>
     <div class="card text-center border-4 ">
